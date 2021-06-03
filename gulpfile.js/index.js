@@ -21,7 +21,7 @@ function generateCSS(cb) {
 function generateHTML(cb) {
     return src(getDir(ROOT_DIR, 'views/index.ejs'))
         .pipe(ejs({
-            title: 'Hello Semaphore!',
+            title: 'Hello Heroku!',
         }))
         .pipe(rename({
             extname: '.html',
