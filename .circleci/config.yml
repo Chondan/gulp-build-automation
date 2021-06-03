@@ -11,11 +11,11 @@ jobs:
     steps:
       - checkout
       - run:
-        name: Install Dependencies
-        command: npm install
+          name: Install Dependencies
+          command: npm install
       - run:
-        name: Run tests
-        command: npm run test
+          name: Run tests
+          command: npm run test
 
 workflows:
   heroku_deploy:
